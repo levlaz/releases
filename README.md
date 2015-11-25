@@ -1,5 +1,5 @@
 # releases
-Uses GitHub API to show feed of releases for a given project
+Uses GitHub API to show feed of releases for a given project. You can see a live version of releases in action [here](https://braindump.pw).
 
 ## Preview 
 
