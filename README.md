@@ -1,6 +1,10 @@
 # releases
 Uses GitHub API to show feed of releases for a given project
 
+## Preview 
+
+![Preview Image](https://www.dropbox.com/s/mrx3r7myofetz85/Screenshot%202015-11-24%2019.47.48.png?dl=0)
+
 ## Usage
 
 Add the following HTML to the page where you want the releases to be displayed.
