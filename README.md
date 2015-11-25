@@ -3,7 +3,7 @@ Uses GitHub API to show feed of releases for a given project
 
 ## Preview 
 
-![Preview Image](https://www.dropbox.com/s/mrx3r7myofetz85/Screenshot%202015-11-24%2019.47.48.png?dl=0)
+![Preview Image](https://levlaz.org/wp-content/uploads/2015/11/Screenshot-2015-11-24-19.47.48.png)
 
 ## Usage
 
