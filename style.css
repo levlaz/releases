@@ -1,0 +1,23 @@
+/* Style for Releases Plugin */
+#releases {
+  list-style-type: none;
+}
+
+a.release-title {
+  text-decoration: none;
+  color: #0066cc;
+}
+
+a.release-title:hover {
+  color:#0099ff;
+}
+
+.release-body a{
+  text-decoration: none;
+  color: #0066cc;
+}
+
+.release-body a:hover{
+  text-decoration: none;
+  color: #0099ff;
+}
