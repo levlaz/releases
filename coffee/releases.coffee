@@ -28,7 +28,7 @@ getReleases = (api_url) ->
           for release in jqXHR.responseJSON
             $('#releases').append "<li class='release'>" +
               "<a class='release-title' href='#{release.html_url}'><h2>#{release.name}</h2></a>" +
-                "<h3>#{moment(release.published_at).format('MMMM Do YY')}</h3>" +
+                "<h3>#{moment(release.published_at).format('MMMM Do YYYY')}</h3>" +
                 "<div class='release-body'>#{marked(release.body)}</div>" +
               "</li>"
 
