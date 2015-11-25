@@ -51,4 +51,4 @@ a.release-title:hover {
 }
 ```
 
-Update the `window.repo` variable on Line 5 of `releases.js` to be whatever repo you want to display releases for.
+Update the `window.repo` variable on [Line 5](https://github.com/levlaz/releases/blob/master/js/releases.js#L5) of `releases.js` to be whatever repo you want to display releases for.
