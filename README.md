@@ -1,7 +1,7 @@
 # releases
-Uses GitHub API to show feed of releases for a given project. You can see a live version of releases in action [here](https://braindump.pw).
+Uses GitHub API to show feed of releases and open bugs for a given project. You can see a live version of releases in action [here](https://braindump.pw).
 
-## Preview 
+## Preview
 
 ![Preview Image](https://levlaz.org/wp-content/uploads/2015/11/Screenshot-2015-11-24-19.47.48.png)
 
@@ -11,6 +11,10 @@ Add the following HTML to the page where you want the releases to be displayed.
 
 ```
 <div class="container">
+  <h1> Known Issues </h1>
+  <ul id="bugs">
+  </ul>
+  <h1> Latest Releases </h1>
   <ul id="releases">
   </ul>
   <p id="more-releases">

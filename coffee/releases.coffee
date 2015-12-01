@@ -18,6 +18,12 @@ getReleaseUrl = (repo) ->
   console.log(api_url)
   return api_url
 
+getBugsUrl = (repo) ->
+  url = repo.split('/')
+  bug_url = "https://api.github.com/repos/#{url[3]}/#{url[4]}/issues?labels=bug"
+  console.log(bug_url)
+  return bug_url
+
 getReleases = (api_url) ->
     $.ajax api_url,
         type: 'GET'
@@ -32,6 +38,19 @@ getReleases = (api_url) ->
                 "<div class='release-body'>#{marked(release.body)}</div>" +
               "</li>"
 
+getBugs = (bug_url) ->
+  $.ajax bug_url,
+    type: 'GET'
+    dataType: 'json'
+    error: (jqXHR, textStatus, errorThrown) ->
+      console.log "AJAX Error: #{textStatus}"
+    success: (data, textStatus, jqXHR) ->
+      for bug in jqXHR.responseJSON
+        $('#bugs').append "<li class='bug'>" +
+          "<a class='bug-title' href='#{bug.html_url}'><h5>#{bug.title}</h5></a></li>"
+
 getReleases(getReleaseUrl(repo))
+console.log("Getting Bugs")
+getBugs(getBugsUrl(repo))
 
 $('#more-releases').append "<a href='#{repo}/releases'><button>View More Releases </button></a>"
