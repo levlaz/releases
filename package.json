@@ -1,0 +1,19 @@
+{
+  "name": "releases",
+  "version": "1.0.0",
+  "description": "Uses GitHub API to show feed of releases and open bugs for a given project.",
+  "main": "releases.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/levlaz/releases.git"
+  },
+  "author": "Lev Lazinskiy <lev@levlaz.org> (https://levlaz.org)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/levlaz/releases/issues"
+  },
+  "homepage": "https://github.com/levlaz/releases#readme"
+}
