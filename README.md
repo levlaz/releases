@@ -5,6 +5,10 @@ Uses GitHub API to show feed of releases and open bugs for a given project. You 
 
 ![Preview Image](https://levlaz.org/wp-content/uploads/2015/11/Screenshot-2015-11-24-19.47.48.png)
 
+## Installation
+
+Releases is now packaged as a npm module, you can install it with `npm install releases`.
+
 ## Usage
 
 Add the following HTML to the page where you want the releases to be displayed.
